@@ -1,3 +1,5 @@
+Food.delete_all
+
 puts "Creating fruits..."
 orange = Food.create(name: "orange", category: "fruits", to_avoid: false)
 citron = Food.create(name: "citron", category: "fruits", to_avoid: false)
