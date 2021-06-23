@@ -1,27 +1,27 @@
+<div class="main-container">
+  <h1>Régime FODMAP</h1>
 
-<h1>Régime FODMAP</h1>
+  <p>Le régime FODMAP vise à adapter ses recettes pour proposer majoritairement des repas sans glucides fermentescibles. Durant les premières semaines, certains aliments autorisés seront à privilégier, et d'autres à éviter pour s'assurer de l'efficacité de l'alimentation FODMAP.</p>
 
-<p>Le régime FODMAP vise à adapter ses recettes pour proposer majoritairement des repas sans glucides fermentescibles. Durant les premières semaines, certains aliments autorisés seront à privilégier, et d'autres à éviter pour s'assurer de l'efficacité de l'alimentation FODMAP.</p>
-
-<div class="wrapper">
-  <div class="to-eat">
-    <h2>A consommer</h2>
-    <div class="list">
-      <% @foods_to_eat.each do |food| %>
-        <div><%= food.name %></div>
-      <% end %>
+  <div class="wrapper">
+    <div class="to-eat">
+      <h2>A consommer</h2>
+      <div class="list">
+        <% @foods_to_eat.each do |food| %>
+          <div><%= food.name %></div>
+        <% end %>
+      </div>
     </div>
-  </div>
 
-  <div class="to-avoid">
-    <h2>A éviter</h2>
-    <div class="list">
-      <% @foods_to_avoid.each do |food| %>
-        <div><%= food.name %></div>
-      <% end %>
+    <div class="to-avoid">
+      <h2>A éviter</h2>
+      <div class="list">
+        <% @foods_to_avoid.each do |food| %>
+          <div><%= food.name %></div>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>
-
 
 
