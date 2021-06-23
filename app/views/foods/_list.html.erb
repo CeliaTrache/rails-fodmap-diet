@@ -1,0 +1,5 @@
+<div data-search-foods-target="list">
+  <% foods.each do |food| %>
+    <div><%= food.name %> (<%= food.to_avoid ? "A éviter" : "A consommer" %>)</div>
+  <% end %>
+</div>
