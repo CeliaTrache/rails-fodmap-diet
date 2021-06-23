@@ -1,1 +1,12 @@
 // Specific CSS for your home-page
+.wrapper-home {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+@media(max-width: 576px) {
+  .wrapper-home {
+    grid-template-columns: 1fr;
+  }
+}
